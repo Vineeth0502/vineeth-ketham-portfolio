@@ -36,8 +36,8 @@ const QuestionCard = styled.div`
   transition: all 0.3s ease;
 
   &:hover {
-    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2); /* Slightly increase the shadow on hover */
-    transform: translateY(-5px); /* Lift the card slightly on hover */
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-5px); 
   }
 `;
 
