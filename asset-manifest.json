@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/vineeth-ketham-portfolio/static/css/main.81b33476.css",
+    "main.js": "/vineeth-ketham-portfolio/static/js/main.050bc855.js",
+    "static/js/453.87a0c979.chunk.js": "/vineeth-ketham-portfolio/static/js/453.87a0c979.chunk.js",
+    "static/media/background_image.gif": "/vineeth-ketham-portfolio/static/media/background_image.c6baaed45477c91d05a0.gif",
+    "index.html": "/vineeth-ketham-portfolio/index.html",
+    "main.81b33476.css.map": "/vineeth-ketham-portfolio/static/css/main.81b33476.css.map",
+    "main.050bc855.js.map": "/vineeth-ketham-portfolio/static/js/main.050bc855.js.map",
+    "453.87a0c979.chunk.js.map": "/vineeth-ketham-portfolio/static/js/453.87a0c979.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81b33476.css",
+    "static/js/main.050bc855.js"
+  ]
+}
