@@ -27,13 +27,14 @@ const BackgroundText = styled.h1`
   z-index: 2; 
 `;
 
-
 const Image = styled.img`
-  width: 40%;
-  top: 200px;
+  width: 38%;
+  height: 68%;
+  max-height: 600px; 
   border: 5px solid white;
   z-index: 1;
   transition: transform 0.3s ease-in-out;
+  object-fit: cover; 
 
   &:hover {
     transform: scale(1.05);
@@ -59,12 +60,11 @@ const Role = styled.div`
   }
 `;
 
-
 const MainContent = () => {
   return (
     <MainContainer>
       <BackgroundText>Vineeth Ketham</BackgroundText>
-      <Image src="/main_image.jpg" alt="Main" />
+      <Image src="/pic.jpg" alt="Main" />
       <Role>
         <p className="about-me">ABOUT ME</p>
         <p>Full-Stack Developer</p>
