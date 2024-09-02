@@ -47,7 +47,7 @@ const WorkExperienceSection = () => {
             <div className="rope-line"></div>
             <img
               ref={imageRef}
-              src="/pic2.jpg"
+              src="pic2.jpg"
               alt="Work Experience"
               className="scroll-image"
             />
