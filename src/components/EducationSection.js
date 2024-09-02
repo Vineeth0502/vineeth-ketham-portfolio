@@ -136,7 +136,7 @@ const ImageSection = () => {
     <SectionContainer ref={sectionRef}>
       <LeftSide inView={inView}>
         <ImageCard>
-          <Image src="/masters.jpg" alt="Saint Louis University" />
+          <Image src="masters.jpg" alt="Saint Louis University" />
           <Overlay>
             <Title>Saint Louis University</Title>
             <Subtitle>Masters In Computer Science</Subtitle>
@@ -146,7 +146,7 @@ const ImageSection = () => {
       <RightSide>
         <TopRight inView={inView}>
           <ImageCard>
-            <Image src="/btech.jpg" alt="Nalla Mall Reddy Engineering College" />
+            <Image src="btech.jpg" alt="Nalla Mall Reddy Engineering College" />
             <Overlay>
               <Title>Nalla Mall Reddy Engineering College</Title>
               <Subtitle>Bachelors In Computer Science</Subtitle>
@@ -155,7 +155,7 @@ const ImageSection = () => {
         </TopRight>
         <BottomRight inView={inView}>
           <ImageCard>
-            <Image src="/intermediate.jpg" alt="Narayana Junior College" />
+            <Image src="intermediate.jpg" alt="Narayana Junior College" />
             <Overlay>
               <Title>Narayana Junior College</Title>
               <Subtitle>Intermediate In MPC</Subtitle>

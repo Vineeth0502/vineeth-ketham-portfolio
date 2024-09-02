@@ -62,7 +62,7 @@ const ProjectImage = styled.img`
 const ProjectTitle = styled.h3`
   font-size: 36px;
   margin-bottom: 20px;
-  color: #00c3ff; /* Accent color */
+  color: #00c3ff; 
 `;
 
 const ProjectDescription = styled.p`
@@ -74,7 +74,7 @@ const ProjectDescription = styled.p`
 
 const ProjectLink = styled.a`
   font-size: 18px;
-  color: #00c3ff; /* Accent color */
+  color: #00c3ff; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,19 +121,19 @@ const projects = [
   {
     title: 'LEO - AI-Powered Virtual Assistant',
     description: 'An AI-powered virtual assistant that integrates advanced speech recognition and a user-friendly GUI.',
-    imgSrc: '/aiproject.jpg',
+    imgSrc: 'aiproject.jpg',
     githubLink: 'https://github.com/Vineeth0502/LEO',
   },
   {
     title: 'BaatCheeth - Android Chat Application',
     description: 'A real-time chat application developed with Firebase and Java, designed for secure and seamless communication.',
-    imgSrc: '/chatapp.jpg',
+    imgSrc: 'chatapp.jpg',
     githubLink: 'https://github.com/Vineeth0502/BaatCheeth',
   },
   {
     title: 'Community Lost & Found Application',
     description: 'A full-stack application connecting users with their lost items, featuring a responsive interface and real-time notifications.',
-    imgSrc: '/lostfound.png',
+    imgSrc: 'lostfound.png',
     githubLink: 'https://github.com/Vineeth0502/lost-found',
   },
   // Add more projects as needed

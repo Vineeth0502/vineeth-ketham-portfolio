@@ -56,7 +56,7 @@ const Question = styled.h3`
 const Answer = styled.p`
   font-size: 18px;
   margin: 10px 0 0;
-  max-height: ${({ isOpen }) => (isOpen ? '1000px' : '0')}; /* Adjust based on your content */
+  max-height: ${({ isOpen }) => (isOpen ? '1000px' : '0')}; 
   overflow: hidden;
   transition: max-height 0.3s ease;
 `;

@@ -26,7 +26,7 @@ const LeftSide = styled.div`
 
 const RightSide = styled.div`
   flex: 1;
-  background-image: url('/profilepic.jpg'); /* Replace with your actual image path */
+  background-image: url('profilepic.jpg'); /* Replace with your actual image path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
