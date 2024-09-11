@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { FaLinkedinIn, FaInstagram, FaEnvelope } from 'react-icons/fa';
 import { Link } from 'react-scroll'; 
+
 const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
@@ -9,6 +10,28 @@ const HeaderContainer = styled.div`
   padding: 20px 50px;
   background-color: black;
   font-family: 'Montserrat', sans-serif;
+
+  @media (max-width: 768px) {
+    padding: 10px 20px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 10px;
+  }
+  
+  @media (max-width: 375px) {
+    a {
+      margin-left: 8px;
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    a {
+      margin-left: 5px;
+      font-size: 10px;
+    }
+  }
 `;
 
 const NavLinks = styled.div`
@@ -21,10 +44,34 @@ const NavLinks = styled.div`
   a {
     text-decoration: none;
     color: white;
-    cursor: pointer; 
+    cursor: pointer;
 
     &:hover {
       color: #f0f0f0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    gap: 9px;
+    font-size: 14px;
+  }
+
+  @media (max-width: 425px) {
+    gap: 10px;
+    font-size: 12px;
+  }
+  
+  @media (max-width: 375px) {
+    a {
+      margin-left: 8px;
+      font-size: 6px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    a {
+      margin-left: 2px;
+      font-size: 6px;
     }
   }
 `;
@@ -35,6 +82,34 @@ const SiteTitle = styled.div`
   margin-right: 190px;
   color: white;
   text-transform: uppercase;
+
+  @media (max-width: 768px) {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+   @media (max-width: 1024px) {
+    margin-right: 10px;
+  }
+
+  @media (max-width: 425px) {
+    margin-right: 1px;
+    font-size: 10px;
+  }
+  
+  @media (max-width: 375px) {
+    a {
+      margin-left: 8px;
+      font-size: 6px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    a {
+      margin-left: 1px;
+      font-size: 6px;
+    }
+  }
 `;
 
 const SocialIcons = styled.div`
@@ -49,6 +124,34 @@ const SocialIcons = styled.div`
 
     &:hover {
       color: #00c3ff; 
+    }
+  }
+
+  @media (max-width: 768px) {
+    a {
+      margin-left: 15px;
+      font-size: 22px;
+    }
+  }
+
+  @media (max-width: 425px) {
+    a {
+      margin-left: 10px;
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    a {
+      margin-left: 8px;
+      font-size: 8px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    a {
+      margin-left: 5px;
+      font-size: 8px;
     }
   }
 `;

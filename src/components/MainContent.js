@@ -11,6 +11,23 @@ const MainContainer = styled.div`
   color: white;
   position: relative;
   font-family: 'Montserrat', sans-serif;
+
+  @media (max-width: 320px) {
+    height: 50vh;
+  }
+  @media (max-width: 375px) {
+    height: 60vh;
+  }
+  
+  @media (max-width: 480px) {
+    height: 65vh;
+
+  }
+  
+  @media (max-width:768px) {
+    height: 70vh;
+
+  }
 `;
 
 const BackgroundText = styled.h1`
@@ -25,6 +42,31 @@ const BackgroundText = styled.h1`
   margin: 0;
   white-space: nowrap;
   z-index: 2; 
+
+  @media (max-width: 1024px) {
+    font-size: 100px;
+    top: 10%;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 80px;
+    top: 18%;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 45px;
+    top: 18%;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 38px;
+    top: 20%;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 32px;
+    top: 18%;
+  }
 `;
 
 const Image = styled.img`
@@ -38,6 +80,31 @@ const Image = styled.img`
 
   &:hover {
     transform: scale(1.05);
+  }
+
+  @media (max-width: 1024px) {
+    width: 70%;
+    height: 60%;
+  }
+
+  @media (max-width: 768px) {
+    width: 60%;
+    height: 50%;
+  }
+
+  @media (max-width: 480px) {
+    width: 70%;
+    height: 40%;
+  }
+
+  @media (max-width: 375px) {
+    width: 60%;
+    height: 35%;
+  }
+
+  @media (max-width: 320px) {
+    width: 50%;
+    height: 30%;
   }
 `;
 
@@ -57,6 +124,46 @@ const Role = styled.div`
     font-size: 18px;
     font-weight: 300;
     margin-bottom: 10px;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 32px;
+
+    .about-me {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    font-size: 28px;
+
+    .about-me {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    font-size: 22px;
+
+    .about-me {
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    font-size: 18px;
+
+    .about-me {
+      font-size: 10px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    font-size: 16px;
+
+    .about-me {
+      font-size: 9px;
+    }
   }
 `;
 
