@@ -172,7 +172,7 @@ const MainContent = () => {
   return (
     <MainContainer>
       <BackgroundText>Vineeth Ketham</BackgroundText>
-      <Image src="pic.jpg" alt="Main" />
+      <Image src="profile_pic.jpg" alt="Main" />
       <Role>
         <p className="about-me">ABOUT ME</p>
         <p>Full-Stack Developer</p>
