@@ -25,8 +25,5 @@ jobs:
     - name: Install dependencies
       run: npm install  # If your project requires it
 
-    - name: Build project
-      run: npm run build  # Remove or adjust if you don't have a build step
-
     - name: Deploy to GitHub Pages
       uses: actions/deploy-pages@v4
