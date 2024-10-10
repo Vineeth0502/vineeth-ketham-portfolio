@@ -15,11 +15,11 @@ const MainContainer = styled.div`
   @media (max-width: 320px) {
     height: 50vh;
   }
-  @media (max-width: 375px) {
+  @media (min-width: 320px, max-width: 375px) {
     height: 60vh;
   }
   
-  @media (max-width: 480px) {
+  @media (max-width: 425px) {
     height: 65vh;
 
   }
@@ -50,24 +50,25 @@ const BackgroundText = styled.h1`
 
   @media (max-width: 768px) {
     font-size: 80px;
-    top: 18%;
+    top: 14%;
   }
 
-  @media (max-width: 480px) {
-    font-size: 45px;
-    top: 18%;
+  @media (min-width: 375px) and (max-width: 425px) {
+    font-size: 42px;
+    top: 13%;
   }
 
-  @media (max-width: 375px) {
+  @media (min-width: 325px) and (max-width: 375px) { 
     font-size: 38px;
-    top: 20%;
+    top: 12%;
   }
 
   @media (max-width: 320px) {
-    font-size: 32px;
-    top: 18%;
+    font-size: 34px;
+    top: 12%;
   }
 `;
+
 
 const Image = styled.img`
   width: 38%;
@@ -92,12 +93,12 @@ const Image = styled.img`
     height: 50%;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 425px) {
     width: 70%;
     height: 40%;
   }
 
-  @media (max-width: 375px) {
+  @media (min-width: 320px, max-width: 375px) {
     width: 60%;
     height: 35%;
   }
@@ -142,7 +143,7 @@ const Role = styled.div`
     }
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 425px) {
     font-size: 22px;
 
     .about-me {
@@ -150,7 +151,7 @@ const Role = styled.div`
     }
   }
 
-  @media (max-width: 375px) {
+  @media (min-width: 320px, max-width: 375px) {
     font-size: 18px;
 
     .about-me {
@@ -171,7 +172,7 @@ const MainContent = () => {
   return (
     <MainContainer>
       <BackgroundText>Vineeth Ketham</BackgroundText>
-      <Image src="pic.jpg" alt="Main" />
+      <Image src="pic.heic" alt="Main" />
       <Role>
         <p className="about-me">ABOUT ME</p>
         <p>Full-Stack Developer</p>

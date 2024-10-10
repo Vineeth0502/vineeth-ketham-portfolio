@@ -60,7 +60,12 @@ const NavLinks = styled.div`
     gap: 10px;
     font-size: 12px;
   }
-  
+
+  @media (max-width: 390px) {
+    gap: 10px;
+    font-size: 8px;
+  }
+
   @media (max-width: 375px) {
     a {
       margin-left: 8px;
