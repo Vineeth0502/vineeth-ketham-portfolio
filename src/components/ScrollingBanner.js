@@ -22,7 +22,7 @@ const BannerText = styled.div`
   text-transform: uppercase; 
   white-space: nowrap;
   padding-left: 100%; 
-  animation: scroll 30s linear infinite; 
+  animation: scroll 30s linear infinite;
 
   @keyframes scroll {
     0% {
@@ -32,13 +32,38 @@ const BannerText = styled.div`
       transform: translateX(-100%);
     }
   }
+
+  /* Responsive font sizes for different screen widths */
+  @media (max-width: 1200px) {
+    font-size: 50px;
+  }
+
+  @media (max-width: 992px) {
+    font-size: 40px;
+    padding: 15px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 30px;
+    padding: 10px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 25px;
+    padding: 5px;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 20px;
+    padding: 3px;
+  }
 `;
 
 const ScrollingBanner = () => {
   return (
     <BannerContainer>
       <BannerText>
-      SPECIALIZED IN AI/ML & WEB DEVELOPMENT • EXPERIENCED IN CREATING SCALABLE APPLICATIONS • FULL-STACK DEVELOPER & MACHINE LEARNING ENTHUSIAST • 
+        SPECIALIZED IN AI/ML & WEB DEVELOPMENT • EXPERIENCED IN CREATING SCALABLE APPLICATIONS • FULL-STACK DEVELOPER & MACHINE LEARNING ENTHUSIAST • 
       </BannerText>
     </BannerContainer>
   );

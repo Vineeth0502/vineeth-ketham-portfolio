@@ -7,21 +7,61 @@ const ContactSection = styled.div`
   color: white; 
   text-align: center;
   font-family: 'Montserrat', sans-serif;
+
+  @media (max-width: 425px) {
+    padding: 80px 15px;
+  }
+
+  @media (max-width: 375px) {
+    padding: 70px 10px;
+  }
+
+  @media (max-width: 320px) {
+    padding: 60px 5px;
+  }
 `;
 
 const ContactTitle = styled.h1`
   font-size: 60px;
   font-weight: bold;
   margin-bottom: 40px;
+
+  @media (max-width: 425px) {
+    font-size: 50px;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 45px;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 40px;
+  }
 `;
 
 const ContactInfo = styled.div`
   margin-bottom: 50px;
+
+  @media (max-width: 320px) {
+    margin-bottom: 30px;
+  }
 `;
 
 const ContactItem = styled.p`
   font-size: 20px;
   margin: 10px 0;
+
+  @media (max-width: 425px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 14px;
+  }
 `;
 
 const ContactForm = styled.form`
@@ -36,6 +76,11 @@ const FormRow = styled.div`
   width: 100%;
   max-width: 600px;
   margin-bottom: 20px;
+
+  @media (max-width: 425px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const FormLabel = styled.label`
@@ -43,6 +88,20 @@ const FormLabel = styled.label`
   text-align: left;
   font-size: 18px;
   margin-bottom: 5px;
+
+  @media (max-width: 425px) {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 12px;
+  }
 `;
 
 const FormInput = styled.input`
@@ -52,6 +111,16 @@ const FormInput = styled.input`
   border-radius: 5px;
   border: none;
   font-size: 16px;
+  width: 100%;
+
+  @media (max-width: 425px) {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 14px;
+  }
 `;
 
 const FormTextarea = styled.textarea`
@@ -63,6 +132,10 @@ const FormTextarea = styled.textarea`
   font-size: 16px;
   height: 100px;
   margin-bottom: 20px;
+
+  @media (max-width: 320px) {
+    font-size: 14px;
+  }
 `;
 
 const SubmitButton = styled.button`
@@ -78,6 +151,21 @@ const SubmitButton = styled.button`
   &:hover {
     background-color: white;
   }
+
+  @media (max-width: 425px) {
+    font-size: 18px;
+    padding: 12px 25px;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
 `;
 
 const Contact = () => {
@@ -87,7 +175,7 @@ const Contact = () => {
       <ContactInfo>
         <ContactItem>kethamvineeth@gmail.com</ContactItem>
         <ContactItem>(314) 224-2757</ContactItem>
-        <ContactItem>1 N Grand Blvd </ContactItem>
+        <ContactItem>1 N Grand Blvd</ContactItem>
         <ContactItem>Saint Louis, MO 63108</ContactItem>
       </ContactInfo>
       <ContactForm action="https://formspree.io/f/mzzpwpoj" method="POST">

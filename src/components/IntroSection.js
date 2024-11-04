@@ -8,6 +8,12 @@ const SectionContainer = styled.div`
   background-color: black;
   color: white;
   font-family: 'Montserrat', sans-serif;
+
+  /* Adjust layout for smaller screens */
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 20px;
+  }
 `;
 
 const LeftSide = styled.div`
@@ -22,11 +28,25 @@ const LeftSide = styled.div`
   &:hover {
     flex: 1.1;
   }
+
+  /* Adjust padding for smaller screens */
+  @media (max-width: 992px) {
+    padding: 30px;
+  }
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
+  @media (max-width: 576px) {
+    padding: 15px;
+  }
+  @media (max-width: 400px) {
+    padding: 10px;
+  }
 `;
 
 const RightSide = styled.div`
   flex: 1;
-  background-image: url('profilepic.jpg'); /* Replace with your actual image path */
+  background-image: url('${process.env.PUBLIC_URL}/profilepic.jpg'); /* Replace with your actual image path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -34,6 +54,17 @@ const RightSide = styled.div`
 
   &:hover {
     flex: 1.1;
+  }
+
+  /* Adjust height for smaller screens */
+  @media (max-width: 768px) {
+    height: 300px;
+  }
+  @media (max-width: 576px) {
+    height: 250px;
+  }
+  @media (max-width: 400px) {
+    height: 200px;
   }
 `;
 
@@ -49,6 +80,20 @@ const Heading = styled.h1`
     to {
       opacity: 1;
     }
+  }
+
+  /* Responsive font sizes */
+  @media (max-width: 992px) {
+    font-size: 36px;
+  }
+  @media (max-width: 768px) {
+    font-size: 30px;
+  }
+  @media (max-width: 576px) {
+    font-size: 24px;
+  }
+  @media (max-width: 400px) {
+    font-size: 20px;
   }
 `;
 
@@ -69,6 +114,26 @@ const Points = styled.ul`
 
   li {
     margin-bottom: 20px;
+  }
+
+  /* Responsive font sizes */
+  @media (max-width: 992px) {
+    font-size: 16px;
+  }
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+  @media (max-width: 576px) {
+    font-size: 12px;
+    li {
+      margin-bottom: 15px;
+    }
+  }
+  @media (max-width: 400px) {
+    font-size: 10px;
+    li {
+      margin-bottom: 10px;
+    }
   }
 `;
 

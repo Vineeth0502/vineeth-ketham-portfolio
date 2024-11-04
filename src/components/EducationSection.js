@@ -22,6 +22,12 @@ const SectionContainer = styled.div`
   height: 100vh;
   background-color: #000000;
   overflow: hidden;
+
+  /* For smaller screens, change to column layout */
+  @media (max-width: 992px) {
+    flex-direction: column;
+    height: auto;
+  }
 `;
 
 const LeftSide = styled.div`
@@ -29,12 +35,27 @@ const LeftSide = styled.div`
   overflow: hidden;
   position: relative;
   ${({ inView }) => inView && slideDownAnimation};
+
+  /* Responsive adjustments */
+  @media (max-width: 992px) {
+    flex: 100%;
+    height: 50vh;
+  }
+
+  @media (max-width: 576px) {
+    height: auto;
+  }
 `;
 
 const RightSide = styled.div`
   flex: 35%;
   display: flex;
   flex-direction: column;
+
+  /* Responsive adjustments */
+  @media (max-width: 992px) {
+    flex: 100%;
+  }
 `;
 
 const TopRight = styled.div`
@@ -44,6 +65,11 @@ const TopRight = styled.div`
   ${({ inView }) => inView && css`
     animation: ${slideDown} 0.8s ease-out 0.3s forwards;
   `};
+
+  /* Responsive adjustments */
+  @media (max-width: 576px) {
+    height: auto;
+  }
 `;
 
 const BottomRight = styled.div`
@@ -53,6 +79,11 @@ const BottomRight = styled.div`
   ${({ inView }) => inView && css`
     animation: ${slideDown} 0.8s ease-out 0.6s forwards;
   `};
+
+  /* Responsive adjustments */
+  @media (max-width: 576px) {
+    height: auto;
+  }
 `;
 
 const ImageCard = styled.div`
@@ -71,6 +102,11 @@ const ImageCard = styled.div`
     opacity: 1;
     transform: translateY(0);
   }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    height: auto;
+  }
 `;
 
 const Image = styled.img`
@@ -78,6 +114,11 @@ const Image = styled.img`
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    height: auto;
+  }
 `;
 
 const Overlay = styled.div`
@@ -99,12 +140,30 @@ const Overlay = styled.div`
 const Title = styled.h3`
   margin: 0 0 10px;
   font-size: 1.5rem;
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 1rem;
+  }
 `;
 
 const Subtitle = styled.p`
   margin: 0;
   font-size: 1rem;
   line-height: 1.5;
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 0.8rem;
+  }
 `;
 
 const ImageSection = () => {
@@ -136,7 +195,7 @@ const ImageSection = () => {
     <SectionContainer ref={sectionRef}>
       <LeftSide inView={inView}>
         <ImageCard>
-          <Image src="masters.jpg" alt="Saint Louis University" />
+          <Image src={`${process.env.PUBLIC_URL}/masters.jpg`} alt="Saint Louis University" />
           <Overlay>
             <Title>Saint Louis University</Title>
             <Subtitle>Masters In Computer Science</Subtitle>
@@ -146,7 +205,7 @@ const ImageSection = () => {
       <RightSide>
         <TopRight inView={inView}>
           <ImageCard>
-            <Image src="btech.jpg" alt="Nalla Mall Reddy Engineering College" />
+            <Image src={`${process.env.PUBLIC_URL}/btech.jpg`} alt="Nalla Mall Reddy Engineering College" />
             <Overlay>
               <Title>Nalla Mall Reddy Engineering College</Title>
               <Subtitle>Bachelors In Computer Science</Subtitle>
@@ -155,7 +214,7 @@ const ImageSection = () => {
         </TopRight>
         <BottomRight inView={inView}>
           <ImageCard>
-            <Image src="intermediate.jpg" alt="Narayana Junior College" />
+            <Image src={`${process.env.PUBLIC_URL}/intermediate.jpg`} alt="Narayana Junior College" />
             <Overlay>
               <Title>Narayana Junior College</Title>
               <Subtitle>Intermediate In MPC</Subtitle>

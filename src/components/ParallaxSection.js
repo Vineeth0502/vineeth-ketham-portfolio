@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const ParallaxContainer = styled.div`
   height: 100vh;
-  background-image: url('scroll_image.jpeg'); 
+  background-image: url('${process.env.PUBLIC_URL}/scroll_image.jpeg'); 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

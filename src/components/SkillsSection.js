@@ -48,7 +48,10 @@ const SkillsSection = () => {
           develop me into a well-rounded professional.
         </p>
         {/* Download CV Button */}
-        <a href="/path/to/your-cv.pdf" download className="download-cv-btn">
+        <a href="https://sluedu-my.sharepoint.com/:w:/g/personal/vineeth_ketham_slu_edu/EfnP8WwYtexHvDLscc9bIFABlMr3IwkPMVqUcSIF4q7v3A?rtime=IuQIaIX83Eg" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="download-cv-btn">
           Download CV <FaArrowRight className="arrow-icon" />
         </a>
       </div>

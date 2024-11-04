@@ -183,7 +183,7 @@ const Header = () => {
         <a href="https://www.linkedin.com/in/vineethketham" target="_blank" rel="noopener noreferrer">
           <FaLinkedinIn />
         </a>
-        <a href="https://www.instagram.com/your_instagram_handle" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/ketham__vineeth/" target="_blank" rel="noopener noreferrer">
           <FaInstagram />
         </a>
         <a href="mailto:your.email@example.com">
