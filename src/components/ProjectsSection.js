@@ -205,7 +205,7 @@ const projects = [
   {
     title: 'Community Lost & Found Application',
     description: 'A full-stack application connecting users with their lost items, featuring a responsive interface and real-time notifications.',
-    imgSrc: 'lostfound.png',
+    imgSrc: 'lost-found.jpg',
     githubLink: 'https://github.com/Vineeth0502/lost-found',
   },
   // Add more projects as needed
